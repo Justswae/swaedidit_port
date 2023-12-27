@@ -1,0 +1,30 @@
+{%extends 'templates/base.html'%}
+
+{%block title%}Home {%endblock%}
+
+{%block content%}
+<div style = 'padding: 20px;'>
+  <main class="px-3">
+    <h1>I'm Tobi</h1>
+    <p class = 'Lead'>and I'm a Backend Web Developer</p>
+    <div style=" padding: 20px;">
+      <p>
+        As a backend web developer with expertise in Django, I possess a strong foundation in creating robust and scalable
+        web applications. My skill set includes proficiency in Python programming and a deep understanding of the Django framework,
+        allowing me to design and implement efficient server-side logic.
+      </p>
+      <p>
+        I am dedicated to writing clean, scalable code that meets project requirements while prioritizing security and performance.
+        With a proven track record of deploying and maintaining web applications in production environments, I am committed to delivering reliable,
+        high-performance systems. My passion for staying abreast of the latest industry developments ensures that I incorporate cutting-edge technologies
+        and best practices into my work, contributing to the success of every project I undertake.
+      </p><br>
+       <p class="lead">
+      <a href="{%url 'core:project_view'%}" class="btn btn-lg btn-primary fw-bold border-white bg-black" style ="color: white">Projects</a>
+    </p>
+    </div>
+    
+   
+  </main>
+</div>
+{%endblock%}
